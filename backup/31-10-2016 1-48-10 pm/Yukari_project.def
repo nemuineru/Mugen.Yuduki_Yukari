@@ -1,0 +1,26 @@
+[Info]
+Name         = "Yukari Yuduki"  ;キャラクターの名前（必要な項目なので省略不可）
+DisplayName  = "Yukari Yuduki"  ;M.U.G.E.Nで実際に表示される名前（省略可能）
+VersionDate  = 08,30,2002  ;キャラクターの最終更新日（変えなくてもＯＫ）
+MugenVersion = 1.0    ;キャラクターが動作出来るM.U.G.E.Nの改訂版
+Author       = "Nemuineru"     ;キャラクターの作成者（必要な項目なので省略不可）
+Pal.Defaults = 6,3,4,2        ;ＣＰＵで出てきた時のカラーパレットの順番
+
+
+[Files]
+Cmd     = Yukari_project.cmd       ;コマンドファイルの登録
+Cns     = Yukari_project.cns     ;コンスタンツファイルの登録
+;ステートファイル
+St      = Yukari_project_Cfg.St       ;コンフィグ そして監視ステートの記述
+st0	= Yukari_project_NA.st		;通常攻撃の記述
+st1	= Yukari_project_SA.st 		;必殺攻撃の記述
+st2	= Yukari_project_HA.st		;超必殺の記述
+st3	= Yukari_project_Eff.st		;特殊ヤラレとかの記述
+                        ;（St,St0,St1,St2,St3,St4,St5,St6,St7,St8,St9）
+                        ;「St」のみ必要な項目なので省略出来ません
+StCommon = Yukari_project_common.st  ;コモンステートファイルの登録
+Sprite  = Yukari_project.sff       ;複数のＰＣＸ画像をまとめたスプライトファイルの登録
+Anim    = Yukari_project.air       ;アニメーションファイルの登録
+Sound   = Yukari_project.snd       ;複数のＷＡＶＥ音声をまとめたサウンドファイルの登録
+
+pal1 = Yukari_project.act
